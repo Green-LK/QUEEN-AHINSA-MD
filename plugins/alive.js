@@ -133,7 +133,7 @@ let madeMenu = `
 
 > *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ QUEEN-AHINSA-MD*`
 
-return await conn.sendMessage(from,{image: {url: `https://files.catbox.moe/de82e3.jpg`},caption:madeMenu},{quoted: mek})
+return await conn.sendMessage(from,{image: {url: `https://i.ibb.co/SR76mBh/Pu3-ZYHBS5139.jpg`},caption:madeMenu},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`𝔼𝕣𝕣𝕣𝕠𝕣`)
