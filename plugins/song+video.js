@@ -33,8 +33,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 *Reply This Message With Option*
 
-*1 Audio With Normal Format*
-*2 Audio With Document Format*
+*1️⃣ NORMAL AUDIO TYPE *
+
+*2️⃣ DOCUMENT AUDIO TYPE *
 
 > *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ DILISHA KING*`;
 
@@ -51,13 +52,13 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     case '1':
                         let down = await fg.yta(url);
                         let downloadUrl = down.dl_url;
-                        await conn.sendMessage(from, { audio: { url:downloadUrl }, caption: '> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*', mimetype: 'audio/mpeg'},{ quoted: mek });
+                        await conn.sendMessage(from, { audio: { url:downloadUrl }, caption: '> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ KING DILISHA*', mimetype: 'audio/mpeg'},{ quoted: mek });
                         break;
                     case '2':               
                         // Send Document File
                         let downdoc = await fg.yta(url);
                         let downloaddocUrl = downdoc.dl_url;
-                        await conn.sendMessage(from, { document: { url:downloaddocUrl }, caption: '> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*', mimetype: 'audio/mpeg', fileName:data.title + ".mp3"}, { quoted: mek });
+                        await conn.sendMessage(from, { document: { url:downloaddocUrl }, caption: '> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ KING DILISHA*', mimetype: 'audio/mpeg', fileName:data.title + ".mp3"}, { quoted: mek });
                         await conn.sendMessage(from, { react: { text: '✅', key: mek.key } })
                         break;
                     default:
@@ -92,7 +93,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const data = search.videos[0];
         const url = data.url;
 
-        let desc = `*📽️ SAHAS-MD VIDEO DOWNLOADER . .⚙️*
+        let desc = `*📽️ QUEEN-AHINSA-MD VIDEO DOWNLOADER . .⚙️*
 
 📽️⚙️ TITLE - ${data.title}
 
@@ -106,8 +107,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 *Reply This Message With Option*
 
-*1 Video With Normal Format*
-*2 Video With Document Format*
+*1️⃣ NORMAL VIDEO TYPE *
+
+*2️⃣ DOCUMENT VIDEO TYPE *
 
 > *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ KING DILISHA*`;
 
@@ -124,12 +126,12 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     case '1':
                         let downvid = await fg.ytv(url);
                         let downloadvUrl = downvid.dl_url;
-                        await conn.sendMessage(from, { video : { url:downloadvUrl }, caption: '> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*', mimetype: 'video/mp4'},{ quoted: mek });
+                        await conn.sendMessage(from, { video : { url:downloadvUrl }, caption: '> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ KING DILISHA*', mimetype: 'video/mp4'},{ quoted: mek });
                         break;
                     case '2':
                         let downviddoc = await fg.ytv(url);
                         let downloadvdocUrl = downviddoc.dl_url;
-                        await conn.sendMessage(from, { document: { url:downloadvdocUrl }, caption: '> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*', mimetype: 'video/mp4', fileName:data.title + ".mp4" }, { quoted: mek });
+                        await conn.sendMessage(from, { document: { url:downloadvdocUrl }, caption: '> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ KING DILISHA*', mimetype: 'video/mp4', fileName:data.title + ".mp4" }, { quoted: mek });
                         break;
                     default:
                         reply("Invalid option. Please select a valid option🔴");
